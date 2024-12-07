@@ -5,7 +5,6 @@
 If you haven't already, install Docker on your local machine. You can download it from the official docker website. 
 
 
-
 Pre-Requisites: 
 sudo snap install aws-cli --classic 
 aws --version
@@ -20,20 +19,11 @@ aws configure
 
 # Task 2: Create a Dockerfile
 Create a file called Dockerfile in your project directory. This file defines how your Docker image should be built:
-#Use an official Nginx base image
-FROM nginx:latest
-#Copy your code and any other static files to the container
-COPY . /usr/share/nginx/html
-#Expose port 8080 to listen for incoming HTTP requests
-EXPOSE 8080
-#Start Nginx when the container starts
-CMD ["nginx", "-g", "daemon off;"]
+See the file in repo.
 
 
 # Task 3: Create an ECR Repository
 If you haven't already, create a repository in AWS ECR to store your Docker image. You can do this through the AWS Management Console or using the AWS CLI.
-
-
 When you create the repo, you should see some push commands. Following down, we will use them to push image to ECR. 
 
 # Task 4: Authenticate to AWS ECR
