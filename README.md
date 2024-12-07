@@ -1,0 +1,1 @@
+# Building-a-Basic-Docker-Image-and-Pushing-it-to-AWS-Elastic-Container-Registry-ECR-
